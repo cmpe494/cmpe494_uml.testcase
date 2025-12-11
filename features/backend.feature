@@ -75,9 +75,11 @@ Scenario: UC-B2 Test Case Generation
         And display an "Invalid numeric value" or "Business rule violation" error
         And the database should remain unchanged
     """
+  #burası farklı kısım 
+  
   When AI extracts detailed test cases from the BDD scenario
   Then The output should be saved as "TestCases_UC-B2.md"
-  And The file should contain at least "3" Test Cases (TC)
+  And The file should contain at least "3" Test Cases (TC) 
 
 @uc_b2 @uml
 Scenario: UC-B2 UML Diagram Generation - Sequence
